@@ -7,6 +7,7 @@ install_oracle_libraries(){
  # local basic_download_url="https://transfer.sh/xWc2U/instantclient-basiclite.zip"
  # local sdk_download_url="https://transfer.sh/9dzwj/instantclient-sdk.zip"
   echo "Downloading Edwins files:"
+  echo "PWD: "$PWD
   local basic_download_url="https://github.com/edwinvandegrift/nodejs-oracledb-buildpack/instantclient-basic-linux.x64-12.1.0.2.0.zip"
   local sdk_download_url="https://github.com/edwinvandegrift/nodejs-oracledb-buildpack/instantclient-sdk-linux.x64-12.1.0.2.0.zip"
  # curl -k "$basic_download_url" --silent --fail --retry 5 --retry-max-time 15 -o instantclient-basic.zip
