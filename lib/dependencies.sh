@@ -12,7 +12,8 @@ install_oracle_libraries(){
  # curl -k "$basic_download_url" --silent --fail --retry 5 --retry-max-time 15 -o instantclient-basic.zip
   curl -k "$basic_download_url" --retry 5 --retry-max-time 15 -o instantclient-basic.zip
   echo "Downloaded [$basic_download_url]"
-  curl -k "$sdk_download_url" --silent --fail --retry 5 --retry-max-time 15 -o instantclient-sdk.zip
+ # curl -k "$sdk_download_url" --silent --fail --retry 5 --retry-max-time 15 -o instantclient-sdk.zip
+  curl -k "$sdk_download_url" --retry 5 --retry-max-time 15 -o instantclient-sdk.zip
   echo "Downloaded [$sdk_download_url]"
   echo "unzipping libraries"
   unzip instantclient-basic.zip
